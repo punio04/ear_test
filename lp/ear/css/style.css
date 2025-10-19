@@ -715,11 +715,15 @@ header / 調整
     grid-template-areas:
       "img title"
       "img text"
-      "button button";
+      "img button";
     gap: min(26 / 1280 * 100 * var(--vw, 1vw), 1.625rem) min(36 / 1280 * 100 * var(--vw, 1vw), 10px);
   }
 }
 
+.o-rounded-linkButton.--w__smaller {
+  width: 100%;
+  font-size: 15px;
+}
 
 
 
@@ -845,27 +849,30 @@ li.featureItem.last {
     grid-template-areas:
       "img title"
       "img text"
-      "button button";
-    gap: min(26 / 1280 * 100 * var(--vw, 1vw), 1.625rem) min(36 / 1280 * 100 * var(--vw, 1vw), 30px);
+      "text button";
+    gap: min(26 / 1280 * 100 * var(--vw, 1vw), 0.625rem) min(36 / 1280 * 100 * var(--vw, 1vw), 30px);
   }
 }
 
 @media (min-width: 960px) {
   .c-top-machine-card__title {
     width: 100%;
+    padding: 12px 0 12px;
   }
 }
 
 .c-top-machine-card__content img {
   grid-area: img;
-  width: 100%;
+  width: 230px;
 }
 
 .c-top-machine-card__text {
   grid-area: text;
   color: #000000;
   line-height: 1.7;
-  width: 200px;
+  width: 220px;
+  font-family: "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", "游ゴシック体", "Yu Gothic", YuGothic, "Yu Gothic Medium", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 17px;
 }
 
 .featureMediaImg {
@@ -894,10 +901,12 @@ h2 {
 }
 
 .profile_box h3 {
-  text-align: center;
   font-weight: 500;
   color: #000000;
-  font-size: 2em;
+  font-size: 29px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: left;
 }
 
 .o-rounded-linkButton {
@@ -912,9 +921,23 @@ h2 {
   font-family: "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 游ゴシック体, "Yu Gothic", YuGothic, "Yu Gothic Medium", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
 
+.tit-red.m-text-center.m-block-space-ss {
+  font-family: "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 游ゴシック体, "Yu Gothic", YuGothic, "Yu Gothic Medium", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  margin-bottom: 17px !important;
+}
+
+.small_font {
+  font-size: 11px;
+  font-weight: lighter;
+  line-height: 1.4;
+  font-family: "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 游ゴシック体, "Yu Gothic", YuGothic, "Yu Gothic Medium", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  color: #000000;
+  margin-top: 4px;
+}
+
 @media (min-width: 960px) {
   .c-top-machine-card__button {
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
   }
 }
@@ -934,11 +957,21 @@ h2 {
 
 
 
+@media (min-width: 960px) {
+
+  .mb60,
+  .m-block-space-m {
+    margin-bottom: min(60 / 1280 * 100 * var(--vw, 1vw), 0rem) !important;
+  }
+}
 
 
 
-
-
+.profile_box {
+  border: none;
+  padding-top: 0px;
+  margin: 0px;
+}
 
 .combiBoxImg {
   margin-bottom: 17px;
@@ -1132,8 +1165,6 @@ h2 {
     gap: min(10 / 375 * 100 * var(--vw, 1vw), 12px) min(22 / 375 * 100 * var(--vw, 1vw), 10.2px);
 
   }
-
-  .
 }
 
 @media not all and (min-width: 960px) {
