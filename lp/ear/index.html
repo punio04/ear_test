@@ -686,34 +686,34 @@
 
   <script>
     window.addEventListener('scroll', function () {
-        const footer = document.querySelector('.footer');
-        if (!footer) return;
-
-        const body = document.body;
-        const windowHeight = window.innerHeight;
-        const scrollY = window.scrollY;
-        const footerTop = footer.getBoundingClientRect().top + scrollY;
-
-        if (scrollY + windowHeight >= footerTop || scrollY < 100) {
-          // 一番下（footer到達）または上から100px以内 → 非表示
-          body.classList.add('is-bottom');
-        } else {
-          body.classList.remove('is-bottom');
-        }
-      });
-  </script>
-  <script>
-    window.addEventListener('scroll', function () {
-      const topButton = document.querySelector('.o-topButton');
-      if (!topButton) return;
-
+      const footer = document.querySelector('.footer');
+      const body = document.body;
+      const windowHeight = window.innerHeight;
       const scrollY = window.scrollY;
+      const footerTop = footer ? footer.getBoundingClientRect().top + scrollY : 0;
 
-      // 上から100px以内は非表示（スクロールしたら表示）
-      if (scrollY < 100) {
-        topButton.classList.add('is-hide');
+      if (scrollY + windowHeight >= footerTop || scrollY < 100) {
+        body.classList.add('is-bottom');
       } else {
-        topButton.classList.remove('is-hide');
+        body.classList.remove('is-bottom');
+      }
+
+      const topButton = document.querySelector('.o-topButton');
+      if (topButton) {
+        if (scrollY < 100) {
+          topButton.classList.add('is-hide');
+        } else {
+          topButton.classList.remove('is-hide');
+        }
+      }
+
+      const spFloater = document.querySelector('.t-top-spFloater');
+      if (spFloater) {
+        if (scrollY < 100) {
+          spFloater.classList.add('is-hide');
+        } else {
+          spFloater.classList.remove('is-hide');
+        }
       }
     });
   </script>
