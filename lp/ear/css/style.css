@@ -1353,3 +1353,7 @@ h2 {
     font-size: 9.5vw;
   }
 }
+
+.o-topButton:before {
+  background-image: url(../img/icon_topButton.svg?z8518dxr);
+}
