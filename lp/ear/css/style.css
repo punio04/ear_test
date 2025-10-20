@@ -214,7 +214,7 @@ main {
 ---------------------------------- */
 @media screen and (min-width: 768px) {
   .fvImg {
-    background-color: #E7F1FA;
+    background-color: #e9e8e6;
   }
 
   .fvImgIn {
@@ -1025,6 +1025,14 @@ h2 {
   margin-bottom: 17px;
 }
 
+@media (min-width: 960px) {
+
+  .mb60,
+  .m-block-space-m {
+    margin-bottom: min(60 / 1280 * 100 * var(--vw, 1vw), 1rem) !important;
+  }
+}
+
 
 @media not all and (min-width: 960px) {
   .mainBtn {
@@ -1107,7 +1115,7 @@ h2 {
     line-height: 1.3;
     text-align: center;
     width: 100%;
-    font-size: 4vw;
+    font-size: 17px;
     padding: 2vw 0 2vw;
     flex-direction: column;
     justify-content: center;
@@ -1415,6 +1423,26 @@ h2 {
 
   .featureInfo h3 {
     text-align: left;
+    font-size: 18px;
+  }
+
+  .combiBoxPoint {
+    font-size: 14px;
+  }
+
+  .tit-primary#m_ttl_purpose,
+  .ttl_h4#m_ttl_purpose,
+  .m_ttl_purpose,
+  .tit-popular {
+    font-size: 17px;
+  }
+
+  h2 {
+    font-size: 31px;
+  }
+
+  .point .point__tit {
+    font-size: 31px;
   }
 }
 
@@ -1422,19 +1450,11 @@ h2 {
   .announce__tel-num {
     font-size: 9.5vw;
   }
-
-
 }
 
 .o-topButton:before {
   background-image: url(../img/icon_topButton.svg?z8518dxr);
 }
-
-
-
-
-
-
 
 @media not all and (min-width: 960px) {
   .t-top-sns__list li a {
@@ -1463,8 +1483,6 @@ body.is-top .t-top-spFloater {
 }
 
 body.is-bottom .t-top-spFloater {
-  /* pointer-events: none; */
-  /* opacity: 0; */
   transition: opacity 0.3s;
   transition-delay: 0.1s;
 }
