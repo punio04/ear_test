@@ -1322,7 +1322,7 @@ h2 {
 
   .c-top-machine-card__text {
     align-self: center;
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .swiper-wrapper {
@@ -1345,6 +1345,14 @@ h2 {
     margin-bottom: 17px !important;
     margin-top: 8px;
     font-size: 12px !important;
+  }
+
+  .recommendText {
+    padding: 0.5rem;
+    right: 8rem;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    line-height: 1.5;
   }
 }
 
