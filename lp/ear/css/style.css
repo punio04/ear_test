@@ -1477,3 +1477,7 @@ body.is-bottom .t-top-spFloater {
   opacity: 0;
   pointer-events: none;
 }
+
+.c-case-card__inner {
+  background-color: #fff;
+}
