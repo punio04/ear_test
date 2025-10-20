@@ -401,6 +401,32 @@ reason
   padding: 20px 0 17px;
 }
 
+.reasonBoxTtl_ {
+  background-color: #ffffff;
+  color: #d990a5;
+  line-height: normal;
+  border-style: solid solid solid;
+  border-color: #d990a5;
+  border-image: initial;
+  border-bottom: 0px;
+  font-size: 22px;
+  place-items: center;
+  border: solid 2px #d990a5;
+  text-align: center;
+  font-weight: 600;
+  font-family: "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 游ゴシック体, "Yu Gothic", YuGothic, "Yu Gothic Medium", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  letter-spacing: normal;
+  padding: 8px 0 8px;
+}
+
+@media (min-width: 960px) {
+  .o-snslist-item:before {
+    width: min(30 / 1280 * 100 * var(--vw, 1vw), 3.875rem);
+    height: min(30 / 1280 * 100 * var(--vw, 1vw), 3.875rem);
+    margin-right: min(12 / 1280 * 100 * var(--vw, 1vw), 0.75rem);
+  }
+}
+
 .reasonBoxMedia img {
   width: 100%;
 }
@@ -709,6 +735,28 @@ header / 調整
   }
 }
 
+.c-top-machine-card__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.t-top-machine__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.o-snslist-item.--type__ranking1:before {
+  background-image: url(../img/ranking1.png);
+}
+
+.o-snslist-item.--type__ranking2:before {
+  background-image: url(../img/ranking2.png);
+}
+
+.o-snslist-item.--type__ranking3:before {
+  background-image: url(../img/ranking3.png);
+}
+
 @media (min-width: 960px) {
   .c-top-machine-card__content {
     padding: min(30 / 1280 * 100 * var(--vw, 1vw), 1.875rem) 0 0;
@@ -850,31 +898,27 @@ li.featureItem.last_space {
 @media (min-width: 960px) {
   .c-top-machine-card__content {
     padding: 0px;
-    grid-template-areas:
-      "img title"
-      "img text"
-      "text button";
-    gap: min(26 / 1280 * 100 * var(--vw, 1vw), 0.625rem) min(36 / 1280 * 100 * var(--vw, 1vw), 30px);
+    gap: min(26 / 1280 * 100 * var(--vw, 1vw), 0.625rem) min(36 / 1280 * 100 * var(--vw, 1vw), 10px);
   }
 }
 
 @media (min-width: 960px) {
-  .c-top-machine-card__title {
+  .c-top-machine-card__title_ {
     width: 100%;
-    padding: 12px 0 12px;
+    padding: 8px 0 8px;
   }
 }
 
 .c-top-machine-card__content img {
   grid-area: img;
-  width: 230px;
+  width: 100%;
 }
 
 .c-top-machine-card__text {
   grid-area: text;
   color: #000000;
   line-height: 1.7;
-  width: 220px;
+  width: 100%;
   font-family: "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", "游ゴシック体", "Yu Gothic", YuGothic, "Yu Gothic Medium", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   font-size: 17px;
 }
@@ -982,9 +1026,6 @@ h2 {
 }
 
 
-
-
-
 @media not all and (min-width: 960px) {
   .mainBtn {
     width: 100%;
@@ -998,7 +1039,7 @@ h2 {
     line-height: 1.3;
     text-align: center;
     width: 100%;
-    font-size: 4vw;
+    font-size: 18px;
     padding: 2vw 0 2vw;
     flex-direction: column;
     justify-content: center;
@@ -1006,7 +1047,7 @@ h2 {
   }
 
   .earTtl-inner {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.4;
     font-weight: 600;
     margin-bottom: 10px;
@@ -1255,6 +1296,55 @@ h2 {
 
   .swiper-wrapper {
     gap: 17px;
+  }
+
+  .t-top-machine__list {
+    display: grid ! Important;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .reasonBoxTtl_ {
+    font-size: 17px;
+    place-items: center;
+    padding: 6px 0 6px;
+  }
+
+  .o-snslist-item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .o-snslist-item:before {
+    margin-right: 0px;
+  }
+
+  .c-top-machine-card__text {
+    align-self: center;
+    font-size: 12px;
+  }
+
+  .swiper-wrapper {
+    gap: 10px;
+  }
+
+  .o-rounded-linkButton.--w__smaller {
+    width: 100%;
+    font-size: 13px;
+    text-align: center;
+    line-height: 1.3;
+    padding: 7px;
+  }
+
+  .reasonBox_frame {
+    padding: 17px 16px 16px 16px;
+  }
+
+  .tit-red.m-text-center.m-block-space-ss {
+    margin-bottom: 17px !important;
+    margin-top: 8px;
+    font-size: 12px !important;
   }
 }
 
