@@ -1303,9 +1303,9 @@ h2 {
   }
 
   .reasonBoxTtl_ {
-    font-size: 17px;
+    font-size: 15px;
     place-items: center;
-    padding: 6px 0 6px;
+    padding: 3px 0 3px;
   }
 
   .o-snslist-item {
@@ -1321,16 +1321,16 @@ h2 {
 
   .c-top-machine-card__text {
     align-self: center;
-    font-size: 10px;
+    font-size: 9px;
   }
 
   .swiper-wrapper {
-    gap: 10px;
+    gap: 9px;
   }
 
   .o-rounded-linkButton.--w__smaller {
     width: 100%;
-    font-size: 13px;
+    font-size: 11px;
     text-align: center;
     line-height: 1.3;
     padding: 7px;
@@ -1353,14 +1353,127 @@ h2 {
     left: 1.5rem;
     line-height: 1.5;
   }
+
+  .featureItem h3 {
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  .featureInfo p {
+    font-size: 14px;
+    margin-top: 6px;
+    line-height: 1.7;
+  }
+
+  .combiBoxList li {
+    font-size: 14px;
+    line-height: 25px;
+  }
+
+  .mt2 {
+    margin-top: 17px;
+    color: #000000;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .c-supervisor__flex-text {
+    font-family: "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", "游ゴシック体", "Yu Gothic", YuGothic, "Yu Gothic Medium", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    line-height: 1.5;
+    font-size: 10px;
+  }
+
+  .BoxGray {
+    padding: 8px;
+    background: white;
+    border: 1px solid #CCCCCC;
+    text-align: left;
+    margin-top: 17px;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  *#m_ttl_purpose+* ul.list li,
+  .m_ttl_purpose+* ul.list li,
+  .purposeList li {
+    line-height: 1.7;
+    font-size: 14px;
+  }
+
+  .purposeList.m-block-space-m {
+    margin-bottom: 17px !important;
+  }
+
+  .profile_box h3 {
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 12px;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .featureInfo h3 {
+    text-align: left;
+  }
 }
 
 @media (max-width: 425px) {
   .announce__tel-num {
     font-size: 9.5vw;
   }
+
+
 }
 
 .o-topButton:before {
   background-image: url(../img/icon_topButton.svg?z8518dxr);
+}
+
+
+
+
+
+
+
+@media not all and (min-width: 960px) {
+  .t-top-sns__list li a {
+    padding: min(30 / 1280 * 100 * var(--vw, 1vw), 1.875rem) 0;
+  }
+}
+
+.t-top-spFloater {
+  z-index: 9;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: min(5 / 375 * 100 * var(--vw, 1vw), 8px) 0;
+  background-color: #fff;
+  opacity: 1;
+  transition: opacity 0.3s;
+  transition-delay: 0.1s;
+}
+
+body.is-top .t-top-spFloater {
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+  transition-delay: 0.1s;
+}
+
+body.is-bottom .t-top-spFloater {
+  /* pointer-events: none; */
+  /* opacity: 0; */
+  transition: opacity 0.3s;
+  transition-delay: 0.1s;
+}
+
+.o-topButton {
+  transition: opacity 0.3s;
+}
+
+.o-topButton.is-hide {
+  opacity: 0;
+  pointer-events: none;
 }
