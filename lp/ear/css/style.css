@@ -1499,3 +1499,17 @@ body.is-bottom .t-top-spFloater {
 .c-case-card__inner {
   background-color: #fff;
 }
+
+.t-top-spFloater {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* スクロール後に表示 */
+.t-top-spFloater:not(.is-hide) {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
