@@ -501,7 +501,7 @@ header / 調整
 }
 
 .featureItem h3 {
-  color:#dfa4b6;
+  color: #dfa4b6;
   font-family: "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 游ゴシック体, "Yu Gothic", YuGothic, "Yu Gothic Medium", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
 
@@ -1359,9 +1359,9 @@ h2 {
 
   .recommendText {
     padding: 0.5rem;
-    right: 8rem;
-    bottom: 1.5rem;
-    left: 1.5rem;
+    right: 8.5rem;
+    bottom: 1rem;
+    left: 1rem;
     line-height: 1.5;
   }
 
@@ -1437,7 +1437,7 @@ h2 {
   .ttl_h4#m_ttl_purpose,
   .m_ttl_purpose,
   .tit-popular {
-    font-size: 17px;
+    font-size: 16px;
   }
 
   h2 {
