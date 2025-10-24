@@ -560,24 +560,6 @@ header / 調整
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .mainBtn {
   width: 42rem;
   line-height: 5rem;
@@ -687,7 +669,6 @@ header / 調整
   color: #dfa4b6;
 }
 
-
 /*
 @media (min-width: 960px) {
   .t-top-machine__list {
@@ -774,13 +755,6 @@ header / 調整
   font-size: 15px;
 }
 
-
-
-
-
-
-
-
 /*@media (min-width: 960px) {
   .c-top-machine-card__content {
     padding: min(30 / 1280 * 100 * var(--vw, 1vw), 1.875rem) 0 0;
@@ -846,30 +820,6 @@ li.featureItem.last_space {
   width: 30%;
   position: relative;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media (min-width: 960px) {
   .t-top-machine__list {
@@ -997,19 +947,6 @@ h2 {
   margin-top: 26px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (min-width: 960px) {
 
   .mb60,
@@ -1017,8 +954,6 @@ h2 {
     margin-bottom: min(60 / 1280 * 100 * var(--vw, 1vw), 0rem) !important;
   }
 }
-
-
 
 .profile_box {
   border: none;
@@ -1037,7 +972,6 @@ h2 {
     margin-bottom: min(60 / 1280 * 100 * var(--vw, 1vw), 1rem) !important;
   }
 }
-
 
 @media not all and (min-width: 960px) {
   .mainBtn {
